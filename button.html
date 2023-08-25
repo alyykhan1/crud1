@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <div class="container"></div>
+    <script>
+        function onClickEvent(){
+            const el = document.createElement('p');
+            el.innerText = 'You Clicked the Button';
+            document.querySelector('.container').appendChild(el);
+
+        }
+        document.querySelector('button').onclick = onClickEvent;
+
+    </script>
+    
+</body>
+</html>
